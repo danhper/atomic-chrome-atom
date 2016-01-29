@@ -21,7 +21,7 @@
 You need to install
 
 * [The Chrome Plugin](https://chrome.google.com/webstore/detail/atomic-chrome/lhaoghhllmiaaagaffababmkdllgfcmc) (Atomic Chrome from the Chrome Store)
-* [The Atom package](https://atom.io/packages/atomic-chrome) (atomic-chrome form apm)
+* [The Atom package](https://atom.io/packages/atomic-chrome) (`atomic-chrome` from apm)
 
 ## Usage
 
@@ -38,3 +38,9 @@ Note that the tab will open in the first launched instance of Atom.
 2. Scroll to the bottom of the page
 3. Press 'Keyboard shortcuts'
 4. Set a shortcut for Atomic Chrome
+
+## Development
+
+This repository is for the Atom plugin development.
+For the Chrome plugin development, see https://github.com/tuvistavie/atomic-chrome.
+Contributions are welcome.
