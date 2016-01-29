@@ -1,0 +1,16 @@
+{
+  "name": "atomic-chrome",
+  "main": "./lib/atomic-chrome",
+  "version": "0.1.0",
+  "description": "Edit Chrome text directly from Atom",
+  "keywords": [],
+  "repository": "https://github.com/tuvistavie/atomic-chrome-atom",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "temp": "^0.8.3",
+    "ws": "^1.0.1"
+  }
+}
