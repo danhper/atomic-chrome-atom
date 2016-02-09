@@ -12,12 +12,13 @@ module.exports = class WSHandler
       @destroySubscription.dispose() if @changeSubscription
 
   register: (data) ->
-    filepath = @getFile(data.title)
+    filepath = @getFile(data)
     atom.workspace.open(filepath).then (editor) =>
       @initEditor(editor, data)
 
-  getFile: (title) ->
-    temp.path {prefix: "#{title}-", suffix: '.txt'}
+  getFile: (data) ->
+    extension = data.extension ? '.md'
+    temp.path {prefix: "#{data.title}-", suffix: extension}
 
   initEditor: (editor, data) ->
     @editor = editor
