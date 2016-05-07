@@ -8,7 +8,7 @@
 
 ## Screencast
 
-### Github issue (textarea)
+### GitHub issue (textarea)
 
 ![github](https://cloud.githubusercontent.com/assets/1436271/12668227/afee6a52-c697-11e5-9b19-c880a0e54132.gif)
 
