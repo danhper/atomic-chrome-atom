@@ -17,7 +17,7 @@ module.exports = class WSHandler
       @initEditor(editor, data)
 
   getFile: (data) ->
-    extension = data.extension ? '.md'
+    extension = data.extension ? atom.config.get('atomic-chrome.defaultExtension')
     temp.path {prefix: "#{data.title}-", suffix: extension}
 
   initEditor: (editor, data) ->

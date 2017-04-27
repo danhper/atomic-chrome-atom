@@ -16,3 +16,8 @@ module.exports = AtomicChrome =
 
   deactivate: ->
     @wss.close()
+
+  config:
+     defaultExtension:
+	type: 'string'
+	default: '.md'
