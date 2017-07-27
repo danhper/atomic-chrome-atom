@@ -13,6 +13,7 @@ module.exports = class WSHandler
 
   register: (data) ->
     filepath = @getFile(data)
+    atom.focus() # activivate Atom application
     atom.workspace.open(filepath).then (editor) =>
       @initEditor(editor, data)
 
