@@ -31,10 +31,11 @@ module.exports = class WSHandler
       @ignoreChanges = false
 
   sendChanges: ->
+    lines = @editor.getBuffer().lines || @editor.getBuffer().getLines()
     message =
       type: 'updateText'
       payload:
-        text: @editor.getBuffer().lines.join('\n')
+        text: lines.join('\n')
     @ws.send JSON.stringify(message)
 
   updateText: (data) ->
