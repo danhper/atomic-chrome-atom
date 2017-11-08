@@ -1,7 +1,7 @@
 {
   "name": "atomic-chrome",
   "main": "./lib/atomic-chrome",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "Edit Chrome text directly from Atom",
   "keywords": [],
   "repository": "https://github.com/tuvistavie/atomic-chrome-atom",
