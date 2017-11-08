@@ -19,7 +19,8 @@ module.exports = class WSHandler
 
   getFile: (data) ->
     extension = data.extension ? atom.config.get('atomic-chrome.defaultExtension')
-    temp.path {prefix: "#{data.title}-", suffix: extension}
+    title = (data.title || '').replace(/[^a-z0-9]/gi, '_').toLowerCase()
+    temp.path {prefix: "#{title}-", suffix: extension}
 
   initEditor: (editor, data) ->
     @editor = editor
